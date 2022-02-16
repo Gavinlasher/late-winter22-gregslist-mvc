@@ -33,11 +33,11 @@
       <div class="row flex-grow-1">
         <div class="col-2 bg-secondary">
           <h4 class="selectable p-2" onclick="app.carsController.viewCars()">Cars</h4>
-          <h4 class="selectable p-2">Houses</h4>
+          <h4 class="selectable p-2" onclick="app.housesController.viewHouses()">Houses</h4>
           <h4 class="selectable p-2">Jobs</h4>
         </div>
         <div class="col-10">
-          <div class="row p-2" id="listings">
+          <div class="row p-2" id='listings'>
             <!-- CAR TEMPLATE -->
             <!-- <div class="col-md-4">
               <div class="bg-white rounded shadow">
@@ -56,6 +56,35 @@
           </div>
           <!-- THIS IS MY FORM -->
 
+          <!-- <form class="row  p-2" onsubmit="app.housesController.createHouse(event)">
+            <h3 class="col-12">Create a House</h3>
+            <div class="mb-3 col-5">
+              <label for="" class="form-label">Price</label>
+              <input required type="number" class="form-control" name="price" id="price" aria-describedby="helpId"
+                placeholder="">
+            </div>
+            <div class="mb-3 col-5">
+              <label for="" class="form-label">SqFt</label>
+              <input required type="number" class="form-control" name="sqft" id="sqft" aria-describedby="helpId"
+                placeholder="">
+            </div>
+            <div class="mb-3 col-2">
+              <label for="" class="form-label">Bedrooms</label>
+              <input required type="number" class="form-control" name="bedroom" id="bedroom" aria-describedby="helpId"
+                placeholder="" value="1" min="1" max="12">
+            </div>
+            <div class="mb-3 col-12">
+              <label for="" class="form-label">Bathrooms</label>
+              <input required type="number" class="form-control" name="bathroom" id="bathroom" aria-describedby="helpId"
+                placeholder="">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="" class="form-label">House Pictures</label>
+              <input required type="text" class="form-control" name="imgUrl" id="imgUrl" aria-describedby="helpId"
+                placeholder="imgUrl">
+            </div>
+            <button class="btn btn-primary">Post</button>
+          </form> -->
 
           <!-- Modal -->
           <div class="modal fade" id="new-listing" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
